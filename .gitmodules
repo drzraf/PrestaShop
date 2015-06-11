@@ -382,3 +382,6 @@
 	path = modules/sendtoafriend
 	url = https://github.com/PrestaShop/sendtoafriend
 	ignore = dirty
+[submodule "themes/l214"]
+	path = themes/l214
+	url = git@gitlab.com:l214/boutique-theme-l214.git
