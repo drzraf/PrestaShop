@@ -131,15 +131,16 @@ var ajaxCart = {
 			e.preventDefault();
 			var idProduct =  parseInt($(this).data('id-product'));
 			var minimalQuantity =  parseInt($(this).data('minimal_quantity'));
+			var pwyw_price = parseFloat($(this).data('pwyw_price'));
 			if (!minimalQuantity)
 				minimalQuantity = 1;
 			if ($(this).prop('disabled') != 'disabled')
-				ajaxCart.add(idProduct, null, false, this, minimalQuantity);
+				ajaxCart.add(idProduct, null, false, this, minimalQuantity, pwyw_price);
 		});
 		//for product page 'add' button...
 		$(document).off('click', '#add_to_cart button').on('click', '#add_to_cart button', function(e){
 			e.preventDefault();
-			ajaxCart.add($('#product_page_product_id').val(), $('#idCombination').val(), true, null, $('#quantity_wanted').val(), null);
+			ajaxCart.add($('#product_page_product_id').val(), $('#idCombination').val(), true, null, $('#quantity_wanted').val(), $('#price_wanted').val(), null);
 		});
 
 		//for 'delete' buttons in the cart block...
@@ -274,7 +275,7 @@ var ajaxCart = {
 	// close fancybox
 	updateFancyBox : function (){},
 	// add a product in the cart via ajax
-	add : function(idProduct, idCombination, addedFromProductPage, callerElement, quantity, whishlist){
+	add : function(idProduct, idCombination, addedFromProductPage, callerElement, quantity, pwyw_price, whishlist){
 		if (addedFromProductPage && !checkCustomizations())
 		{
 			if (contentOnly)
@@ -320,7 +321,7 @@ var ajaxCart = {
 			async: true,
 			cache: false,
 			dataType : "json",
-			data: 'controller=cart&add=1&ajax=true&qty=' + ((quantity && quantity != null) ? quantity : '1') + '&id_product=' + idProduct + '&token=' + static_token + ( (parseInt(idCombination) && idCombination != null) ? '&ipa=' + parseInt(idCombination): ''),
+			data: 'controller=cart&add=1&ajax=true&qty=' + ((quantity && quantity != null) ? quantity : '1') + (pwyw_price ? '&pwyw_price=' + pwyw_price : '') + '&id_product=' + idProduct + '&token=' + static_token + ( (parseInt(idCombination) && idCombination != null) ? '&ipa=' + parseInt(idCombination): ''),
 			success: function(jsonData,textStatus,jqXHR)
 			{
 				// add appliance to whishlist module

@@ -347,8 +347,10 @@ class AdminProductsControllerCore extends AdminController
 			$object->show_price = $object->available_for_order ? 1 : (int)Tools::getValue('show_price');
 			$object->online_only = (int)Tools::getValue('online_only');
 		}
-		if ($this->isTabSubmitted('Prices'))
+		if ($this->isTabSubmitted('Prices')) {
 			$object->on_sale = (int)Tools::getValue('on_sale');
+			$object->pwyw_price = (int)Tools::getValue('pwyw_price');
+		}
 	}
 
 	public function getList($id_lang, $orderBy = null, $orderWay = null, $start = 0, $limit = null, $id_lang_shop = null)
@@ -3793,7 +3795,7 @@ class AdminProductsControllerCore extends AdminController
 		// prices
 		array_push($product_props,
 			'price', 'wholesale_price', 'id_tax_rules_group', 'unit_price_ratio', 'on_sale',
-			'unity', 'minimum_quantity', 'additional_shipping_cost',
+			'pwyw_price', 'unity', 'minimum_quantity', 'additional_shipping_cost',
 			'available_now', 'available_later', 'available_date'
 		);
 
