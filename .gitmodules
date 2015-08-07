@@ -160,7 +160,7 @@
 	ignore = dirty
 [submodule "modules/blocktopmenu"]
 	path = modules/blocktopmenu
-	url = https://github.com/PrestaShop/blocktopmenu.git
+	url = git@github.com:drzraf/blocktopmenu.git
 	branch = master
 	ignore = dirty
 [submodule "modules/blockuserinfo"]
