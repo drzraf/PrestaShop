@@ -389,3 +389,6 @@
 [submodule "modules/salesforce"]
 	path = modules/salesforce
 	url = git@gitlab.com:l214/prestashop-sync.git
+[submodule "modules/pscleaner"]
+	path = modules/pscleaner
+	url = git@github.com:drzraf/pscleaner.git
