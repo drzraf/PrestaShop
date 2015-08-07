@@ -392,3 +392,6 @@
 [submodule "modules/pscleaner"]
 	path = modules/pscleaner
 	url = git@github.com:drzraf/pscleaner.git
+[submodule "modules/paywhatyouwant"]
+	path = modules/paywhatyouwant
+	url = git@gitlab.com:l214/prestashop-paywhatyouwant.git
