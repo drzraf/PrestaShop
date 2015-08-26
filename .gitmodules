@@ -387,7 +387,7 @@
 	path = themes/l214
 	url = git@gitlab.com:l214/boutique-theme-l214.git
 [submodule "modules/salesforce"]
-	path = modules/salesforce
+	path = modules/l214sync
 	url = git@gitlab.com:l214/prestashop-sync.git
 [submodule "modules/pscleaner"]
 	path = modules/pscleaner
