@@ -103,6 +103,11 @@
 	url = https://github.com/PrestaShop/blocknewsletter.git
 	branch = master
 	ignore = dirty
+[submodule "modules/blockpaymentlogo"]
+	path = modules/blockpaymentlogo
+	url = https://github.com/PrestaShop/blockpaymentlogo.git
+	branch = master
+	ignore = dirty
 [submodule "modules/blockpermanentlinks"]
 	path = modules/blockpermanentlinks
 	url = https://github.com/PrestaShop/blockpermanentlinks.git
@@ -155,7 +160,7 @@
 	ignore = dirty
 [submodule "modules/blocktopmenu"]
 	path = modules/blocktopmenu
-	url = git@github.com:drzraf/blocktopmenu.git
+	url = https://github.com/PrestaShop/blocktopmenu.git
 	branch = master
 	ignore = dirty
 [submodule "modules/blockuserinfo"]
