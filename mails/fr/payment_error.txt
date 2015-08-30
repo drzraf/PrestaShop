@@ -1,12 +1,14 @@
 
 [{shop_url}] 
 
-Bonjour {firstname} {lastname},
+Bonjour {firstname} {lastname}, 
 
-Merci d'avoir effectué vos achats sur {shop_name} ! 
+Un problème a été constaté pour le paiement de votre commande sur
+{shop_name} ayant pour référence {order_name}. Veuillez nous
+contacter le plus rapidement possible.
 
-Le paiement pour votre commande ayant pour référence
-{order_name} a été accepté. 
+NOUS NE POUVONS MALHEUREUSEMENT PAS EXPÉDIER VOTRE COMMANDE TANT QUE
+NOUS N'AVONS PAS REÇU VOTRE PAIEMENT. 		 
 
 Vous pouvez accéder à tout moment au suivi de votre commande et
 télécharger votre facture dans "Historique des commandes"
@@ -20,3 +22,4 @@ site.
 
 {shop_name} [{shop_url}] réalisé avec
 PrestaShop(tm) [http://www.prestashop.com/] 
+

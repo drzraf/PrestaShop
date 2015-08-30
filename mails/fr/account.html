@@ -4,7 +4,8 @@
 		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
 		<title>Message de {shop_name}</title>
-
+		
+		
 		<style>	@media only screen and (max-width: 300px){ 
 				body {
 					width:218px !important;
@@ -70,7 +71,7 @@
 	<td align="center" class="titleblock" style="padding:7px 0">
 		<font size="2" face="Open-sans, sans-serif" color="#555454">
 			<span class="title" style="font-weight:500;font-size:28px;text-transform:uppercase;line-height:33px">Bonjour {firstname} {lastname},</span><br/>
-			<span class="subtitle" style="font-weight:500;font-size:16px;text-transform:uppercase;line-height:25px">Votre commande a été expédiée</span>
+			<span class="subtitle" style="font-weight:500;font-size:16px;text-transform:uppercase;line-height:25px">Merci d'avoir créé votre compte client sur {shop_name}.</span>
 		</font>
 	</td>
 </tr>
@@ -85,10 +86,12 @@
 				<td style="padding:7px 0">
 					<font size="2" face="Open-sans, sans-serif" color="#555454">
 						<p data-html-only="1" style="border-bottom:1px solid #D6D4D4;margin:3px 0 7px;text-transform:uppercase;font-weight:500;font-size:18px;padding-bottom:10px">
-							Commande {order_name}&nbsp;-&nbsp;Expédié						</p>
+							Vos codes d'accès sur {shop_name}.						</p>
 						<span style="color:#777">
-							Votre commande ayant la référence <span style="color:#333"><strong>{order_name}</strong></span> vient d'être expédiée.<br /> 
-							Merci d'avoir effectué vos achats sur {shop_name} !						</span>
+							Vos codes d'accès :<br /> 
+							<span style="color:#333"><strong>Adresse e-mail : <a href="mailto:{email}" style="color:#337ff1">{email}</a></strong></span><br />
+							<span style="color:#333"><strong>Mot de passe :</strong></span> {passwd}
+						</span>
 					</font>
 				</td>
 				<td width="10" style="padding:7px 0">&nbsp;</td>
@@ -97,9 +100,37 @@
 	</td>
 </tr>
 <tr>
+	<td class="space_footer" style="padding:0!important">&nbsp;</td>
+</tr>
+<tr>
+	<td class="box" style="border:1px solid #D6D4D4;background-color:#f8f8f8;padding:7px 0">
+		<table class="table" style="width:100%">
+			<tr>
+				<td width="10" style="padding:7px 0">&nbsp;</td>
+				<td style="padding:7px 0">
+					<font size="2" face="Open-sans, sans-serif" color="#555454">
+						<p style="border-bottom:1px solid #D6D4D4;margin:3px 0 7px;text-transform:uppercase;font-weight:500;font-size:18px;padding-bottom:10px">Conseils de sécurité importants :</p>
+						<ol style="margin-bottom:0">
+							<li>Vos informations de compte doivent rester confidentielles.</li>
+							<li>Ne les communiquez jamais à qui que ce soit.</li>
+							<li>Changez votre mot de passe régulièrement.</li>
+							<li>Si vous pensez que quelqu'un utilise votre compte illégalement, veuillez nous prévenir immédiatement.</li>
+						</ol>
+					</font>
+				</td>
+				<td width="10" style="padding:7px 0">&nbsp;</td>
+			</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td class="space_footer" style="padding:0!important">&nbsp;</td>
+</tr>
+<tr>
 	<td class="linkbelow" style="padding:7px 0">
-		<span>
-			Vous pouvez accéder à tout moment au suivi de votre commande et télécharger votre facture dans <a href="{history_url}" style="color:#337ff1">"Historique des commandes"</a> de la rubrique <a href="{my_account_url}" style="color:#337ff1">"Mon compte"</a> sur notre site.		</span>
+		<font size="2" face="Open-sans, sans-serif" color="#555454">
+			<span>Vous pouvez dès à présent passer commande sur notre boutique : <a href="{shop_url}" style="color:#337ff1">{shop_name}</a></span>
+		</font>
 	</td>
 </tr>
 

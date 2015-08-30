@@ -3,10 +3,14 @@
 
 Bonjour {firstname} {lastname},
 
-Merci d'avoir effectué vos achats sur {shop_name} ! 
+Merci pour votre commande ayant pour référence {order_name} sur
+{shop_name} 
 
-Le paiement pour votre commande ayant pour référence
-{order_name} a été accepté. 
+Malheureusement, un ou plusieurs des produits que vous avez
+commandés sont actuellement en rupture de stock. Ceci peut entraîner
+un léger retard de livraison. Veuillez nous excuser pour ce délai et
+soyez assurés que nous faisons nos meilleurs efforts pour rectifier
+la situation rapidement. 
 
 Vous pouvez accéder à tout moment au suivi de votre commande et
 télécharger votre facture dans "Historique des commandes"
@@ -20,3 +24,4 @@ site.
 
 {shop_name} [{shop_url}] réalisé avec
 PrestaShop(tm) [http://www.prestashop.com/] 
+
