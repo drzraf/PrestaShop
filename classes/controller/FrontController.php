@@ -1651,6 +1651,7 @@ class FrontControllerCore extends Controller
         if (count($products_need_cache)) {
             $colors = Product::getAttributesColorList($products_need_cache);
         }
+        $colors = Product::getAttributesColorList(array_map(function ($p) { return $p['id_product']; }, $products));
 
         Tools::enableCache();
         foreach ($products as &$product) {
