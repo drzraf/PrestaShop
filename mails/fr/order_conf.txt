@@ -47,8 +47,6 @@ TOTAL PAYÉ
 
 {total_paid} 
 
-TRANSPORTEUR : {carrier}
-
 PAIEMENT : {payment} 		 
 
 {delivery_block_txt} 
