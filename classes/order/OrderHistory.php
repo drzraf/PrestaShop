@@ -400,6 +400,11 @@ class OrderHistoryCore extends ObjectModel
             return false;
         }
 
+        if (! is_array($template_vars)) {
+            $template_vars = array();
+        }
+        $template_vars += array('{date}' => Tools::displayDate($order->date_add));
+
         if (!$this->sendEmail($order, $template_vars)) {
             return false;
         }

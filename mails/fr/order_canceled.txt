@@ -3,7 +3,7 @@
 
 Bonjour {firstname} {lastname}, 
 
-Votre commande sur {shop_name} ayant pour référence {order_name}
+Votre commande du {date} sur {shop_name} ayant pour référence {order_name}
 a été annulée. 
 
 Vous pouvez accéder à tout moment au suivi de votre commande et
