@@ -425,7 +425,7 @@ class OrderHistoryCore extends ObjectModel
         if (isset($result['template']) && Validate::isEmail($result['email'])) {
             ShopUrl::cacheMainDomainForShop($order->id_shop);
 
-            $topic = $result['osname'];
+            $topic = $result['osname'] . ' ' . $order->getUniqReference();
             $data = array(
                 '{lastname}' => $result['lastname'],
                 '{firstname}' => $result['firstname'],
