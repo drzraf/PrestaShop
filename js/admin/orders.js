@@ -467,8 +467,9 @@ function init()
 
 		if ($('input#add_product_product_price_excl').val() == 0)
 		{
-			jAlert(txt_add_product_no_product_price);
-			go = false;
+			// L214 customization (workaroud #PSCSX-8761)
+			// jAlert(txt_add_product_no_product_price);
+			// go = false;
 		}
 
 		if (go)
