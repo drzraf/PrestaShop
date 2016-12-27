@@ -400,6 +400,11 @@ class OrderHistoryCore extends ObjectModel
             return false;
         }
 
+        if (! is_array($template_vars)) {
+            $template_vars = array();
+        }
+        $template_vars += array('{date}' => Tools::displayDate($order->date_add));
+
         if (!$this->sendEmail($order, $template_vars)) {
             return false;
         }
@@ -420,7 +425,7 @@ class OrderHistoryCore extends ObjectModel
         if (isset($result['template']) && Validate::isEmail($result['email'])) {
             ShopUrl::cacheMainDomainForShop($order->id_shop);
 
-            $topic = $result['osname'];
+            $topic = $result['osname'] . ' ' . $order->getUniqReference();
             $data = array(
                 '{lastname}' => $result['lastname'],
                 '{firstname}' => $result['firstname'],
