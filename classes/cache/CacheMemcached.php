@@ -23,6 +23,9 @@
 *  @license    http://opensource.org/licenses/osl-3.0.php  Open Software License (OSL 3.0)
 *  International Registered Trademark & Property of PrestaShop SA
 */
+			$this->memcached->setOption(Memcached::OPT_PREFIX_KEY, _DB_PREFIX_);
+			if($this->memcached->getOption(Memcached::HAVE_IGBINARY))
+				$this->memcached->setOption(Memcached::OPT_SERIALIZER, Memcached::SERIALIZER_IGBINARY);
 /**
  * This class require PECL Memcached extension
  *
