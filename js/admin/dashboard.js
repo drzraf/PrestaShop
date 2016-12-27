@@ -190,6 +190,7 @@ function data_list_small(widget_name, data) {
 }
 
 function getBlogRss() {
+	return;
 	$.ajax({
 		url : dashboard_ajax_url,
 		data : {
