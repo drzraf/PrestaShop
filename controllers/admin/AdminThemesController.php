@@ -1584,6 +1584,7 @@ class AdminThemesControllerCore extends AdminController
 
         foreach ($themes as $theme_object) {
             /** @var Theme $theme_object */
+		if(! $xml->variations->variation) return array($this->l('Configuration file is missing variations'));
             if ($theme_object->name == $theme_name) {
                 return true;
             }
