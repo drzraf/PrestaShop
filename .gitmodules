@@ -160,7 +160,7 @@
 	ignore = dirty
 [submodule "modules/blocktopmenu"]
 	path = modules/blocktopmenu
-	url = https://github.com/PrestaShop/blocktopmenu.git
+	url = git@github.com:drzraf/blocktopmenu.git
 	branch = master
 	ignore = dirty
 [submodule "modules/blockuserinfo"]
@@ -383,3 +383,21 @@
 	url = https://github.com/PrestaShop/sendtoafriend.git
 	branch = master
 	ignore = dirty
+[submodule "themes/l214"]
+	path = themes/l214
+	url = git@gitlab.com:l214/boutique-theme-l214.git
+[submodule "modules/l214sync"]
+	path = modules/l214sync
+	url = git@gitlab.com:l214/prestashop-sync.git
+[submodule "modules/pscleaner"]
+	path = modules/pscleaner
+	url = git@github.com:drzraf/pscleaner.git
+[submodule "modules/l214"]
+	path = modules/l214
+	url = git@gitlab.com:l214/prestashop-sync.git
+[submodule "modules/mailalerts"]
+	path = modules/mailalerts
+	url = git@github.com:drzraf/mailalerts.git
+#[submodule "modules/paywhatyouwant"]
+#	path = modules/paywhatyouwant
+#	url = git@gitlab.com:l214/prestashop-paywhatyouwant.git
