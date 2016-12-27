@@ -210,8 +210,8 @@
 	ignore = dirty
 [submodule "modules/homefeatured"]
 	path = modules/homefeatured
-	url = https://github.com/PrestaShop/homefeatured.git
-	branch = master
+	url = https://github.com/drzraf/homefeatured.git
+	branch = configurable-order-way
 	ignore = dirty
 [submodule "modules/homeslider"]
 	path = modules/homeslider
