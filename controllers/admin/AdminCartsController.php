@@ -479,6 +479,7 @@ class AdminCartsControllerCore extends AdminController
             }
 
             echo Tools::jsonEncode(array_merge($this->ajaxReturnVars(), array('errors' => $errors)));
+            die;
         }
     }
 
