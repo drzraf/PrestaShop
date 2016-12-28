@@ -55,6 +55,7 @@ admin-dev/themes/default/css/screen.css
 translations/*
 mails/*
 !mails/en/
+!mails/fr/
 themes/default-bootstrap/lang/*
 themes/default-bootstrap/modules/*/translations/*.php
 themes/default-bootstrap/mails/*
