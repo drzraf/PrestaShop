@@ -676,8 +676,8 @@ function init()
 		}
 		if ($(this).closest('tr.product-line-row').find('td .edit_product_price').val() <= 0)
 		{
-			jAlert(txt_add_product_no_product_price);
-			return false;
+			// jAlert(txt_add_product_no_product_price);
+			// return false;
 		}
 		if (confirm(txt_confirm))
 		{
