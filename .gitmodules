@@ -394,7 +394,7 @@
 	url = git@github.com:drzraf/pscleaner.git
 [submodule "modules/l214"]
 	path = modules/l214
-	url = git@gitlab.com:l214/prestashop-sync.git
+	url = git@gitlab.com:l214/prestashop-l214.git
 [submodule "modules/mailalerts"]
 	path = modules/mailalerts
 	url = git@github.com:drzraf/mailalerts.git
